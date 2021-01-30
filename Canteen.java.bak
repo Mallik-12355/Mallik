@@ -1,0 +1,40 @@
+class Person{
+	static void run(){
+		System.out.println("You Can Run Now From Person Class");
+	}
+	void eat(){
+		System.out.println("You Can Eat Veg");
+	}
+}
+
+class Student extends Person{
+	static void run(){
+		System.out.println("You Can Run From Student Class");
+	}
+	void eat(){
+		super.eat();
+		System.out.println("You Can Eat Non Veg");
+		sleep();
+		run();
+	}
+	void sleep(){
+		System.out.println("You Can Sleep Now");
+	}
+}
+
+class Canteen{
+	void eat(Person p){
+		p.eat();
+		System.out.println();
+	}
+	void run(Person p){
+		p.run();
+	}
+	public static void main(String[] args){
+		Canteen cn=new Canteen();
+
+		Student s=new Student();
+		cn.eat(s);
+		cn.run(s);
+	}
+}
