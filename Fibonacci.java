@@ -2,15 +2,15 @@ import java.util.Scanner;
 class Fibonacci{
 	void fibonacci(int x){
 		int fno=0,sno=1,res;
-		int count=0;
+		System.out.println(fno);
+		System.out.println(sno);
 		while(true){
 			res=fno+sno;
-			count++;
 			if(res>=x)
 				break;
 			fno=sno;
 			sno=res;
-			System.out.println("The fibonacci series of ["+count+"] is: "+res);
+			System.out.println(res);
 		}
 	}
 	public static void main(String[] args){
