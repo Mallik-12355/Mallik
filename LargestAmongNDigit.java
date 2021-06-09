@@ -17,7 +17,7 @@ class LargestAmongNDigit{
 	public static void main(String[] args)	{
 		Scanner scn=new Scanner(System.in);
 		LargestAmongNDigit lgt=new LargestAmongNDigit();
-		System.out.print("Enter how many numbers: ");
+		System.out.print("Size of the Array: ");
 		int n=scn.nextInt();
 		int[] a=new int[n];		
 		for(int i=0;i<n;i++){
